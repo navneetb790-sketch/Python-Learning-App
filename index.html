@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Learning App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+    <div id="editor" style="height:400px;"></div>
+    <button onclick="runCode()">Run Code</button>
+    <pre id="output"></pre>
+
+    <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/python");
+
+    function runCode() {
+        var code = editor.getValue();
+        var output = document.getElementById('output');
+        // Use Skulpt or Brython for Python in browser
+    }
+    </script>
+</body>
+</html>
